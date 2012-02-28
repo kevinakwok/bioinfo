@@ -1,0 +1,31 @@
+Kevin Kwok
+
+There are three files:
+1. Readme: This file contains basic information on how to use the script
+2. Sequences.txt: This file contains the sequences to be compared
+3. smith-waterman.py: This is the code that will run the algorithm
+
+Prepping the code:
+To run the algorithm on the sequences of your choice just open Sequences.txt and replace the test sequences with your own. Like the test inputs, the format should be two lines (with no newline after the second). After you've done this just save the file. It should be noted that this file must be in the same directory as smith-waterman.py for it to run.
+
+
+Running the code:
+Go into your terminal/command prompt and navigate to the folder containing the file smith-waterman.py and Sequences.txt. Then type in the command:
+
+	python smith-waterman.py
+
+This will run the code. If successful it should print out "Algorithm run successfully". The results will be outputted in a file named Output.txt in the same directory as smith-waterman.py.
+
+Format of Results in Output.txt:
+The results in output.txt will be formatted like so:
+
+CACAC-A
+||||| |
+CACACTA
+
+Additionally, if there are more than one equally optimal results it will display them all.
+
+Miscellaneous notes:
+If you'd like to switch the values for match, mismatch, or gap, this can be done within the smith-waterman.py file easily.
+
+Furthermore, if you decide to run the algorithm multiple times on different sequences, to be safe you should delete the Output.txt file after each use.
